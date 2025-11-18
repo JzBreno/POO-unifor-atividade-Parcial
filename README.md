@@ -1,8 +1,8 @@
 ## 🎓 POO-unifor-atividade-Parcial: Minha Universidade
 
-Este projeto é uma implementação em Java, utilizando o paradigma de **Programação Orientada a Objetos (POO)**, que simula o cadastro e a organização básica de classes e entidades em um contexto universitário. [cite\_start]A atividade visa demonstrar a aplicação prática de conceitos fundamentais de POO, como classes e objetos, encapsulamento, herança, polimorfismo, associação e composição[cite: 16, 17].
+Este projeto é uma implementação em Java, utilizando o paradigma de **Programação Orientada a Objetos (POO)**, que simula o cadastro e a organização básica de classes e entidades em um contexto universitário. A atividade visa demonstrar a aplicação prática de conceitos fundamentais de POO, como classes e objetos, encapsulamento, herança, polimorfismo, associação e composição.
 
-[cite\_start]O projeto segue as quatro questões propostas na atividade final da disciplina de POO[cite: 16].
+O projeto segue as quatro questões propostas na atividade final da disciplina de POO.
 
 -----
 
@@ -10,33 +10,33 @@ Este projeto é uma implementação em Java, utilizando o paradigma de **Program
 
 O projeto está estruturado em torno das seguintes classes e relações:
 
-### [cite\_start]1. Classes e Herança [cite: 18, 23]
+### 1\. Classes e Herança
 
 | Classe Principal | Abstrata | Derivadas | Descrição |
 | :--- | :--- | :--- | :--- |
-| **`Pessoa`** | [cite\_start]Sim [cite: 18] | [cite\_start]`Visitante`, `Aluno`, `Professor` [cite: 23] | [cite\_start]Classe base com atributos comuns (`nome`, `cpf`, `dataNascimento`)[cite: 19]. |
-| **`Aluno`** | Não | [cite\_start]`Bolsista`, `Regular` [cite: 26] | [cite\_start]Classe derivada de `Pessoa`, contendo o atributo `matrícula`[cite: 24]. |
-| **`Disciplina`** | Não | N/A | [cite\_start]Classe para representar uma matéria, com atributos como `codigo`, `nome` e `semestre`[cite: 20]. |
+| **`Pessoa`** | Sim | `Visitante`, `Aluno`, `Professor` | Classe base com atributos comuns (`nome`, `cpf`, `dataNascimento`). |
+| **`Aluno`** | Não | `Bolsista`, `Regular` | Classe derivada de `Pessoa`, contendo o atributo `matrícula`. |
+| **`Disciplina`** | Não | N/A | Classe para representar uma matéria, com atributos como `codigo`, `nome` e `semestre`. |
 
-### [cite\_start]2. Encapsulamento e Métodos [cite: 19, 21]
+### 2\. Encapsulamento e Métodos
 
-  * [cite\_start]**`Pessoa`**: Implementa métodos de acesso (Getters e Setters) para seus atributos[cite: 19].
-  * [cite\_start]**`Pessoa`**: Possui o método público **`fazerAniversario()`** para atualizar a idade da pessoa[cite: 22].
-  * [cite\_start]**`Professor`**: Possui o método **`darAula()`**[cite: 25].
+  * **`Pessoa`**: Implementa métodos de acesso (Getters e Setters) para seus atributos.
+  * **`Pessoa`**: Possui o método público **`fazerAniversario()`** para atualizar a idade da pessoa.
+  * **`Professor`**: Possui o método **`darAula()`**.
 
-### [cite\_start]3. Polimorfismo (Sobrescrita) [cite: 26]
+### 3\. Polimorfismo (Sobrescrita)
 
-O método **`pagarMensaldade()`** (ou `pagarMensalidade` dependendo da implementação) é sobrescrito nas subclasses de `Aluno`:
+O método **`pagarMensaldade()`** é sobrescrito nas subclasses de `Aluno`:
 
   * **`Bolsista`**: Implementa uma lógica específica para o pagamento.
   * **`Regular`**: Implementa uma lógica específica para o pagamento.
 
-### [cite\_start]4. Associação e Composição [cite: 30]
+### 4\. Associação e Composição
 
 A classe **`Turma`** demonstra o conceito de composição ao agregar outras classes:
 
-  * [cite\_start]**Atributos**: `codigo`, `disciplina` (`Disciplina`), `professor` (`Professor`), e uma lista (`ArrayList`) de `alunos` (`Aluno`)[cite: 31, 32].
-  * [cite\_start]**Métodos**: Possui métodos para gerenciar a lista de alunos: **`adicionarAluno()`**, **`removerAluno()`**, e **`listarAlunos()`**[cite: 31].
+  * **Atributos**: `codigo`, `disciplina` (`Disciplina`), `professor` (`Professor`), e uma lista (`ArrayList`) de `alunos` (`Aluno`).
+  * **Métodos**: Possui métodos para gerenciar a lista de alunos: **`adicionarAluno()`**, **`removerAluno()`**, e **`listarAlunos()`**.
 
 -----
 
@@ -56,20 +56,20 @@ src/
 │   └── Bolsista.java
 └── model/abstractClass/
     └── Pessoa.java
-[cite_start]└── Main.java  <-- Contém a lógica de instanciação e teste [cite: 33]
+└── Main.java  <-- Contém a lógica de instanciação e teste
 ```
 
 -----
 
 ## 🧪 Como Executar
 
-A classe principal para execução e teste é a **`Main.java`**. [cite\_start]Ela contém toda a lógica de instanciação de objetos para validar a correta implementação dos modelos[cite: 33]:
+A classe principal para execução e teste é a **`Main.java`**. Ela contém toda a lógica de instanciação de objetos para validar a correta implementação dos modelos:
 
-1.  [cite\_start]Cria **3 Disciplinas**[cite: 33].
-2.  [cite\_start]Cria **3 Alunos** (2 Regulares e 1 Bolsista)[cite: 36].
-3.  [cite\_start]Cria **1 Professor** [cite: 37] [cite\_start]e **2 Visitantes**[cite: 38].
-4.  [cite\_start]Cria **3 Turmas**, associando o Professor e as Disciplinas, e adicionando todos os Alunos a cada turma[cite: 39].
-5.  [cite\_start]Imprime no console as informações detalhadas de cada turma (código, professor, disciplina e a lista de alunos matriculados)[cite: 40].
+1.  Cria **3 Disciplinas**.
+2.  Cria **3 Alunos** (2 Regulares e 1 Bolsista).
+3.  Cria **1 Professor** e **2 Visitantes**.
+4.  Cria **3 Turmas**, associando o Professor e as Disciplinas, e adicionando todos os Alunos a cada turma.
+5.  Imprime no console as informações detalhadas de cada turma (código, professor, disciplina e a lista de alunos matriculados).
 
 ### Passos:
 
@@ -92,7 +92,7 @@ Uma classe adicional (`UniversidadeApp.java`, se implementada no seu repositóri
 
 ## 👥 Integrantes da Equipe
 
-[cite\_start]*(Jose Breno Sousa Jacauna
+*(Jose Breno Sousa Jacauna
 Guilherme Bechtold
 Joao Erick Alves Correia Rabelo
-Letícia Monteiro Vidal)* [cite: 45]
+Letícia Monteiro Vidal)*
