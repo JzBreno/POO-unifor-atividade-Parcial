@@ -82,14 +82,6 @@ A classe principal para execução e teste é a **`Main.java`**. Ela contém tod
 
 -----
 
-## 🎨 Visualização JavaFX (Opcional)
-
-Uma classe adicional (`UniversidadeApp.java`, se implementada no seu repositório) pode ser usada para visualizar os dados de forma gráfica, utilizando o **JavaFX**. Esta aplicação demonstra a listagem das turmas e a exibição dos detalhes de cada turma, professor e alunos matriculados em uma interface de usuário.
-
-  * **Requisito:** Necessita que o **JavaFX SDK** esteja configurado no ambiente de execução.
-
------
-
 ## 👥 Integrantes da Equipe
 
 *(Jose Breno Sousa Jacauna
